@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-purple-500">
+    <main class="text-right">
+
+        <form action="" class="bg-white w-9/12 mx-auto mt-24 rounded-xl h-full pb-10  ">
+            <h1 class="text-center text-white bg-blue-400 hight ">محاسبه آنلاین قیمت بیمه خودرو</h1>
+
+            <div class="pt-10 flex flex-col w-10/12 mx-auto">
+                <label for="" class="text-gray-700 text-sm">مدل خودرو</label>
+                <select name="" id="" class="border-b  text-right py-1 make focus:white focus:white">
+                    <option value="" class="">- انتخاب -</option>
+                    <option value="1">پراید</option>
+                    <option value="2">اپتیما</option>
+                    <option value="3">پورشه</option>
+                </select>
+            </div>
+
+            <div class="w-10/12 mx-auto pt-8 flex flex-col">
+                <label for="" class="text-gray-700 text-sm">سال ساخت</label>
+                <select name="" id="" class="text-right border-b selectTag">
+
+
+                </select>
+            </div>
+
+            <div class="mx-auto w-10/12 pt-8">
+                <p class="pb-1">نوع بیمه</p>
+                <label for="" class="flex flex-row-reverse my-1">
+                    <p class="mr-4">ساده - شخص ثالث</p>
+                    <input type="radio" name="level" id="" value="sade" class="mr-4 level">
+                </label>
+
+                <label for="" class="flex flex-row-reverse my-1">
+                    <p class="mr-4">کامل - شخص ثالث با بیمه بدنه</p>
+                    <input type="radio" name="level" id="" value="kamel" class="mr-4 level">
+                </label>
+            </div>
+            <div class="result">
+
+            </div>
+            <div class="spinner w-12/12 mt-8 mb-8 hidden">
+                <img src="./img/spinner.gif" alt="" class=" w-1/12 mx-auto">
+
+            </div>
+
+            <div class="w-12/12  text-center  text-rm mx-auto  mt-8">
+                <button type="submit" class="text-white w-10/12 border bg-gray-800 py-3 rounded-xl px-1">محاسبه
+                    قیمت</button>
+            </div>
+
+        </form>
+    </main>
+
+
+
+
+
+    <script src="./class.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
